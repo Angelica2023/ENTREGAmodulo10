@@ -8,12 +8,12 @@ services: # define los servicios de la aplicación, EN ESTE CASO LA BASE DE DATO
     links:             # el nombre del contenedor que queremos mapear en este caso monguito
       - modulo10finalb
   modulo10finalb:
-    image: tareas   #indicamos a que imagen debe crearse el contenedor (en este caso usamos mongo)
+    image: mongo   #indicamos a que imagen debe crearse el contenedor (en este caso usamos mongo)
     ports:
       - "27017:27017"
     environment:
       - MONGO_INITDB_ROOT_USERNAME=angelicaalp
-      - MONGO_INITDB_ROOT_PASSWORD=AANPlearn2023
+      - MONGO_INITDB_ROOT_PASSWORD=password
 
         # alumnos:
   #   image: postgres 
